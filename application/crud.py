@@ -2,9 +2,7 @@ from fastapi import FastAPI,HTTPException,APIRouter
 
 crud_router = APIRouter()
 user = {}
-# @crud_router.get('/test')
-# async def testing_crud():
-#     return {"message":"For Testing Purpose"}
+
 
 @crud_router.post('/create_user')
 async def create_new_user(user_id : int, name:str):
